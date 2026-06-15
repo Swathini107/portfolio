@@ -1,0 +1,94 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.app-container {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+/* Scroll progress bar top indicator */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+  transform-origin: 0%;
+  z-index: 101;
+}
+
+/* Footer layout */
+.footer {
+  max-width: var(--max-width);
+  margin: 4rem auto 2rem auto;
+  border-radius: 16px;
+  border-color: rgba(255, 255, 255, 0.04);
+  padding: 2rem;
+  background: rgba(10, 12, 30, 0.4);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copyright-text {
+  font-family: var(--font-headings);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.built-with {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Back to Top floating button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(10, 12, 30, 0.8);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 90;
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+  box-shadow: 0 10px 25px rgba(155, 81, 224, 0.15);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 3rem 1.25rem 1.5rem 1.25rem;
+    padding: 1.5rem 1rem;
+  }
+  .scroll-top-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}
