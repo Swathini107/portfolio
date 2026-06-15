@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section className="py-section-gap px-margin-edge bg-surface-container-lowest" id="education">
       <div className="max-w-container-max mx-auto">
-        
+
         {/* Experience Part */}
         <div className="grid grid-cols-12 gap-gutter mb-24">
           <div className="col-span-12 md:col-span-4">
@@ -18,7 +18,7 @@ export default function Experience() {
                 <h3 className="font-headline-lg text-4xl uppercase text-on-background group-hover:text-tertiary transition-colors">
                   React JS Intern
                 </h3>
-                <span className="font-label-sm text-label-sm text-tertiary">2025 — Present</span>
+                <span className="font-label-sm text-label-sm text-tertiary">JUNE 2025 — JULY 2025</span>
               </div>
               <p className="font-label-sm text-label-sm text-on-surface-variant mt-2">
                 ACCENT TECHNO SOFT (ATS)

@@ -39,7 +39,7 @@ export default function App() {
       <main>
         {/* Hero Section */}
         <Hero />
-        
+
         {/* Profile (About) */}
         <AnimatedSection>
           <About />
@@ -70,34 +70,34 @@ export default function App() {
       <footer className="w-full py-section-gap border-t border-outline-variant bg-background">
         <div className="flex flex-col md:flex-row justify-between items-center px-margin-edge w-full max-w-container-max mx-auto gap-8">
           <span className="font-headline-lg text-on-background text-2xl uppercase tracking-widest">
-            Swathini B.
+            Swathini BALACHANDAR
           </span>
-          
+
           <div className="flex gap-8 items-center">
-            <a 
-              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline" 
+            <a
+              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline"
               href="https://linkedin.com/in/swathini-balachandar"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
             </a>
-            <a 
-              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline" 
+            <a
+              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline"
               href="https://github.com/Swathini107"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>
-            <a 
-              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline" 
+            <a
+              className="font-label-sm text-label-sm text-on-surface-variant hover:text-tertiary transition-colors duration-300 underline-offset-4 hover:underline"
               href="mailto:swathini0999@gmail.com"
             >
               Email
             </a>
           </div>
-          
+
           <p className="font-label-sm text-label-sm text-on-surface-variant opacity-50 uppercase">
             © {new Date().getFullYear()} SWATHINI BALACHANDAR — ALL RIGHTS RESERVED
           </p>
