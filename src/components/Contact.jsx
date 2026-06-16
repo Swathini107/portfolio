@@ -34,7 +34,9 @@ export default function Contact() {
           </a>
           <a 
             className="font-label-sm text-label-sm border-b border-outline hover:border-tertiary transition-colors pb-1 text-on-background" 
-            href="#"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             RESUME
           </a>

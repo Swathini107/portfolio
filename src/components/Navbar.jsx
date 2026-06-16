@@ -54,9 +54,14 @@ export default function Navbar({ onNavClick }) {
             >
               Contact
             </a>
-            <button className="font-label-sm text-label-sm btn-ghost px-6 py-2 uppercase">
+            <a 
+              className="font-label-sm text-label-sm btn-ghost px-6 py-2 uppercase text-center inline-block"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -116,9 +121,14 @@ export default function Navbar({ onNavClick }) {
             >
               Contact
             </a>
-            <button className="font-label-sm text-label-sm btn-ghost px-6 py-2 uppercase mt-2">
+            <a 
+              className="font-label-sm text-label-sm btn-ghost px-6 py-2 uppercase mt-2 text-center inline-block"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

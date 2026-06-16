@@ -34,13 +34,13 @@ export default function Hero() {
         <div className="w-full grid grid-cols-12 gap-gutter items-end">
           <div className="col-span-12 md:col-span-8">
             <p className="font-headline-lg text-headline-lg-mobile md:text-headline-lg max-w-4xl text-left">
-              Websites that <span className="italic accent-orange">think</span> in your brand's voice.
+              Ideas become  <span className="italic accent-orange">impact</span> when they're brought to life with code.
             </p>
           </div>
           <div className="col-span-12 md:col-span-4 mt-8 md:mt-0 text-left md:text-right">
             <p className="font-body-md text-on-surface-variant max-w-xs ml-auto">
-              Brand, design, and code shaped as one. 
-              So your online presence works as hard as you do.
+              From concept to creation, 
+              every detail is crafted to make an impact.
             </p>
           </div>
         </div>

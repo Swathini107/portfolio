@@ -15,7 +15,7 @@ export default function About() {
           </p>
           <div className="max-w-xl">
             <p className="font-body-md text-on-surface-variant leading-relaxed">
-              Enthusiastic learner in Data Science and Machine Learning, skilled in Python, predictive modeling, and web application development. I focus on creating precise, avant-garde digital solutions that leverage data-driven foundations.
+              Enthusiastic learner in Data Science and Machine Learning, skilled in Python, Java, predictive modeling, and web application development. I focus on creating precise, avant-garde digital solutions that leverage data-driven foundations.
             </p>
           </div>
         </div>

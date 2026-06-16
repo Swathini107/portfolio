@@ -1,4 +1,5 @@
 import React from 'react';
+import { Github } from './SocialIcons';
 
 // Import local assets
 import cyberquestImg from '../assets/cyberquest.png';
@@ -20,11 +21,51 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Project 1: CyberQuest */}
-          <div className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5]">
+          <div
+            role="link"
+            tabIndex={0}
+            onClick={() => window.open("https://cyberquest-p2ks.onrender.com", "_blank", "noopener,noreferrer")}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.open("https://cyberquest-p2ks.onrender.com", "_blank", "noopener,noreferrer");
+              }
+            }}
+            className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5] cursor-pointer hover:shadow-2xl hover:shadow-tertiary/5"
+          >
             <div className="relative z-10">
-              <span className="font-label-sm text-label-sm text-outline mb-4 block">
-                01 / TEAM LEAD
-              </span>
+              <div className="flex justify-between items-start mb-4">
+                <span className="font-label-sm text-label-sm text-outline">
+                  01 / TEAM LEAD
+                </span>
+                
+                {/* Action Buttons */}
+                <div className="flex gap-3 items-center z-20">
+                  <a
+                    href="https://github.com/Swathini107/CyberQuest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10"
+                    onClick={(e) => e.stopPropagation()}
+                    title="View GitHub Repository"
+                  >
+                    <Github size="18" />
+                  </a>
+                  <a
+                    href="https://cyberquest-p2ks.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10 group-hover:border-tertiary group-hover:text-tertiary"
+                    onClick={(e) => e.stopPropagation()}
+                    title="Open Deployed Page"
+                  >
+                    <span className="material-symbols-outlined text-[18px] leading-none">
+                      arrow_outward
+                    </span>
+                  </a>
+                </div>
+              </div>
+
               <h3 className="font-headline-lg text-5xl mb-6 group-hover:text-tertiary transition-colors text-on-background">
                 CyberQuest
               </h3>
@@ -55,11 +96,51 @@ export default function Projects() {
           </div>
 
           {/* Project 2: Live Chat */}
-          <div className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5] md:mt-24">
+          <div
+            role="link"
+            tabIndex={0}
+            onClick={() => window.open("https://live-chat-pvt.onrender.com", "_blank", "noopener,noreferrer")}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.open("https://live-chat-pvt.onrender.com", "_blank", "noopener,noreferrer");
+              }
+            }}
+            className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5] md:mt-24 cursor-pointer hover:shadow-2xl hover:shadow-tertiary/5"
+          >
             <div className="relative z-10">
-              <span className="font-label-sm text-label-sm text-outline mb-4 block">
-                02 / DEVELOPER
-              </span>
+              <div className="flex justify-between items-start mb-4">
+                <span className="font-label-sm text-label-sm text-outline">
+                  02 / DEVELOPER
+                </span>
+
+                {/* Action Buttons */}
+                <div className="flex gap-3 items-center z-20">
+                  <a
+                    href="https://github.com/Swathini107/live-chat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10"
+                    onClick={(e) => e.stopPropagation()}
+                    title="View GitHub Repository"
+                  >
+                    <Github size="18" />
+                  </a>
+                  <a
+                    href="https://live-chat-pvt.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10 group-hover:border-tertiary group-hover:text-tertiary"
+                    onClick={(e) => e.stopPropagation()}
+                    title="Open Deployed Page"
+                  >
+                    <span className="material-symbols-outlined text-[18px] leading-none">
+                      arrow_outward
+                    </span>
+                  </a>
+                </div>
+              </div>
+
               <h3 className="font-headline-lg text-5xl mb-6 group-hover:text-tertiary transition-colors text-on-background">
                 Live Chat App
               </h3>
@@ -89,17 +170,57 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Project 3: Responsive Web App */}
-          <div className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5]">
+          {/* Project 3: Acrostia Landing */}
+          <div
+            role="link"
+            tabIndex={0}
+            onClick={() => window.open("https://webacrostia.onrender.com", "_blank", "noopener,noreferrer")}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                window.open("https://webacrostia.onrender.com", "_blank", "noopener,noreferrer");
+              }
+            }}
+            className="group border border-outline-variant p-8 md:p-12 hover:border-tertiary transition-all duration-500 relative overflow-hidden flex flex-col justify-between aspect-[4/5] cursor-pointer hover:shadow-2xl hover:shadow-tertiary/5"
+          >
             <div className="relative z-10">
-              <span className="font-label-sm text-label-sm text-outline mb-4 block">
-                03 / DEVELOPER
-              </span>
+              <div className="flex justify-between items-start mb-4">
+                <span className="font-label-sm text-label-sm text-outline">
+                  03 / DEVELOPER
+                </span>
+
+                {/* Action Buttons */}
+                <div className="flex gap-3 items-center z-20">
+                  <a
+                    href="https://github.com/Swathini107/webacrostia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10"
+                    onClick={(e) => e.stopPropagation()}
+                    title="View GitHub Repository"
+                  >
+                    <Github size="18" />
+                  </a>
+                  <a
+                    href="https://webacrostia.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 border border-outline-variant hover:border-tertiary hover:text-tertiary rounded-full transition-all duration-300 flex items-center justify-center text-on-surface-variant hover:bg-tertiary/10 group-hover:border-tertiary group-hover:text-tertiary"
+                    onClick={(e) => e.stopPropagation()}
+                    title="Open Deployed Page"
+                  >
+                    <span className="material-symbols-outlined text-[18px] leading-none">
+                      arrow_outward
+                    </span>
+                  </a>
+                </div>
+              </div>
+
               <h3 className="font-headline-lg text-5xl mb-6 group-hover:text-tertiary transition-colors text-on-background">
-                Blog Landing
+                Acrostia Landing
               </h3>
               <p className="font-body-md text-on-surface-variant max-w-sm">
-                A high-performance blog-style landing page built with modular architecture and Bootstrap-enhanced responsive grid.
+                A high-performance responsive landing page for Acrostia built with Bootstrap-enhanced responsive grid and modular styling.
               </p>
             </div>
             
@@ -111,7 +232,7 @@ export default function Projects() {
                 BOOTSTRAP
               </span>
               <span className="bg-on-surface text-background px-3 py-1 font-label-sm text-label-sm rounded-sm">
-                RWD
+                CSS
               </span>
             </div>
 
@@ -119,7 +240,7 @@ export default function Projects() {
               <img 
                 className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700" 
                 src={blogImg} 
-                alt="Blog Landing Site" 
+                alt="Acrostia Landing Site" 
               />
             </div>
           </div>
@@ -128,3 +249,4 @@ export default function Projects() {
     </section>
   );
 }
+
